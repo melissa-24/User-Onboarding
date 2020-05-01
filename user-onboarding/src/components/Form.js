@@ -84,6 +84,7 @@ const NewForm = ({ submitUser }) => {
           placeholder="Name"
           value={formState.name}
           onChange={handleChange}
+          data-cy="name"
         />
         {errors.name.length > 0 ? <p className="error">{errors.name}</p> : null}
       </FormGroup>
@@ -96,6 +97,7 @@ const NewForm = ({ submitUser }) => {
           placeholder="Email"
           value={formState.email}
           onChange={handleChange}
+          data-cy="email"
         />
         {errors.email.length > 0 ? (
           <p className="error">{errors.email}</p>
@@ -110,6 +112,7 @@ const NewForm = ({ submitUser }) => {
           placeholder="Password"
           value={formState.password}
           onChange={handleChange}
+          data-cy="password"
         />
         {errors.password.length > 0 ? (
           <p className="error">{errors.password}</p>
